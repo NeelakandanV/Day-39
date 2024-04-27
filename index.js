@@ -31,7 +31,7 @@ app.get("/gettime",(req,res)=>{
         if(err){
             console.log(err)
         }else{
-           res.send(`The text files available in the timestamp folder are, \n${data}`)
+           res.send(data)
         }
     })
 })
