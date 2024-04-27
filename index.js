@@ -6,7 +6,6 @@ const PORT = 9000;
 const app = express();
 
 app.use(express.static("timestamp"))
-app.use(express.gettime("timestamp"))
 
 app.get("/static",(req,res)=>{
     const date = new Date()
